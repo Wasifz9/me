@@ -97,7 +97,14 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div>
-                <a href="mailto:wasif.zulkernine@mail.utoronto.ca"  class="button2" style = {{width: 300 + 'px'}}>Let's Chat!</a>
+                <div className = 'bottomBox'>
+                    <div className = 'column'>
+                        <p className = 'selected1' style = {{textAlign:'left'}}> 
+                                        get in touch
+                        </p>
+                        <a href="mailto:wasif.zulkernine@mail.utoronto.ca"  class="button2" style = {{width: 300 + 'px'}}>Let's Chat!</a>
+                    </div>
+                </div>
             </div>
         );
       }    

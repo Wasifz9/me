@@ -99,3 +99,15 @@ a.button2:active{
         padding-bottom: 50px;
     }
 }
+
+.bottomBox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBox .column{
+    margin: 0px;
+    padding: 0px
+}
