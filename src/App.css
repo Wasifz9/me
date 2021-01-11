@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;  
 }
 
 .App-logo {
@@ -14,14 +19,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #101318;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+}
+
+.App-content{
+  min-height: 75vh;
+  background-color: #030011;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 
 .App-link {
@@ -36,3 +50,125 @@
     transform: rotate(360deg);
   }
 }
+
+.title{
+  font-size: 55px;
+  font-family: 'Hind Siliguri', sans-serif;
+  margin-bottom: 0;
+  color: white;
+  font-weight: lighter;
+
+}
+
+
+ul{
+  font-size: 25px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: lighter;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+ justify-content: center;
+ float: left;
+ margin: 0;
+}
+
+.unSelected-title {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-size:calc(10px + 2vmin);
+  padding: 0px 3px;
+}
+
+.unSelected-title:hover{
+  transition-duration: 0.5s;
+  color: rgb(9, 132, 214);
+  cursor: pointer;
+}
+
+.selected {
+  transition-duration: 0.5s;
+  color: rgb(9, 132, 214);
+  margin: 0px;
+  padding: 0px 3px;
+}
+
+.headtit{
+  padding: 0px 10px;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: rgb(9, 132, 214);
+  margin: 0px;
+}
+
+.subsubtitle{
+  font-size: 20px;
+  color: rgb(9, 132, 214);
+  margin: 0px;
+}
+
+.info{
+  color:white;
+  font-size: 16px;
+  margin: 0px;
+}
+
+
+
+@keyframes in{
+  fron{ font-size: 25px; color: aliceblue;}
+  to{ font-size: 40px; color: darkgoldenrod;} 
+}
+@keyframes out{
+  fron{ font-size: 40px;color: darkgoldenrod;}
+  to{ font-size: 25px;color: aliceblue;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+
+.fade-appear{
+  opacity: 0; 
+  z-index: 1;
+  background-color: #030011;
+}
+.fade-appear.fade-appear-active{
+  opacity: 1;
+  transition: opacity 1000ms linear;
+
+}
+
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 5000ms linear 5000ms;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 5000ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+
