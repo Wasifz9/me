@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import './About.css';
 
 class About extends React.Component {
+    
 
     render () {
         return (
             <div className = 'everythingelse'>
                 <div className = "home">
-                    <p className = "info"> <br/> <br/>Hey! I'm a computer engineering student at the University of Toronto looking for an internship for <span className = 'highlighted'> Summer 2021! </span> <br/> I'm interested in the fields of operating systems, machine learning and full-stack development.
+                    <p className = "info"> Hey! I'm a computer engineering student at the University of Toronto looking for an internship for <span className = 'highlighted'> Summer 2021! </span> <br/> I'm interested in the fields of operating systems, machine learning and full-stack development.
                     <br/> </p>
                     <div className = "actions">
                    
@@ -29,7 +30,7 @@ class About extends React.Component {
                                 interests
                             </p>
                             <p className = "info">
-                                I'm pretty interested in a wide variety of things; it depends on the day really. I'm an ex-Gamer, can't get enough music and I am comitted to getting my Chess ELO over, hmm, 1800? I also love fitness/sports, especially basketball, and aspire to master the piano... eventually. 
+                                I'm pretty interested in a wide variety of things; it depends on the day really. I'm an ex-Gamer, can't get enough music and I am committed to getting my Chess ELO over, hmm, 1800? I also love fitness/sports, especially basketball, and aspire to master the piano... eventually. 
                                 <br/> <br/>
 
                             </p>

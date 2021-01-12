@@ -24,7 +24,6 @@
     padding: 0px 100px;
     flex-direction: column;
     overflow-y: hidden;
-
 }
 
 .everythingelse{
@@ -32,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .words{
@@ -45,7 +45,7 @@
     color: rgb(9, 132, 214);
 }
 .subselected{
-    color: rgb(9, 132, 214);
+    color: #0984d6;
     font-size: 22px;
 }
 
@@ -63,7 +63,7 @@ a.button2{
     text-align:center;
     line-height: auto;
     transition: all 0.5s;
-    width: 100%;
+    width: 300px;
 }
 a.button2:hover{
     color:#DDDDDD;
@@ -94,9 +94,32 @@ a.button2:active{
     font-size: 40px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1080px) and (min-width: 620px){
     .everythingelse{
         padding-bottom: 50px;
+        width: 700px;
+    }
+
+    .bottomBox{
+        width: 700px;
+    }
+
+    .home{
+        margin-top: 30px;
+    }
+
+    .column{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .home
+        {
+            margin-top: 30px;
+        }
+    .column{
+        margin: 10px;
     }
 }
 
@@ -105,6 +128,7 @@ a.button2:active{
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .bottomBox .column{

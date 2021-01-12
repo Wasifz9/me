@@ -22,9 +22,8 @@ toggleAppear = () => {
 
 render () {
   const{appearHome,choice} = this.state
-    return (
-
-
+   
+  return (
       <div className="App">
         <header className="App-header">
           <p className = "title"> 

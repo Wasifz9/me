@@ -9,7 +9,6 @@ class Content extends React.Component{
             if (word == 'work experience') return <WorkExperience />;
             else if (word == 'about') return <About />;
             else if (word == 'contact') return <Contact />;
-            //else return <h1 className = "selected"></h1>
 
     }
 }

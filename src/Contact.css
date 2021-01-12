@@ -13,7 +13,7 @@ body {
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -142,8 +142,10 @@ i {
     color: #fff;
 }
 
-
-
-
+@media screen and (max-width:700px){
+.card{
+    transform: scale(0.9);
+}
+}
 
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
