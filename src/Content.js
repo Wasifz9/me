@@ -8,7 +8,7 @@ class Content extends React.Component{
             const word = this.props.choice;
             if (word == 'work experience') return <WorkExperience />;
             else if (word == 'about') return <About />;
-            else if (word == 'contact') return <Contact />;
+            else if (word == 'contact') return <Contact/>;
 
     }
 }

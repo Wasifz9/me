@@ -19,18 +19,19 @@
 }
 
 .App-header {
-  background-color: #101318;
-  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   overflow: hidden;
+  background-position: center bottom -200px;
+  background-color: #101318;
 }
 
 .App-content{
   min-height: 75vh;
   background-color: #030011;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,22 +43,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .title{
-
   font-family: 'Hind Siliguri', sans-serif;
   margin-bottom: 0;
   color: white;
   font-weight: lighter;
-
 }
 
 
@@ -66,7 +56,6 @@ ul{
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: lighter;
   list-style-type: none;
-  margin: 0;
   overflow: hidden;
   justify-content: center;
   padding: 0;
@@ -85,20 +74,17 @@ li {
   text-decoration: none;
   transition-duration: 0.3s;
   font-size:calc(10px + 2vmin);
-  padding: 0px 3px;
+  padding: 0px 4px;
 }
 
 .unSelected-title:hover{
-  transition-duration: 0.5s;
   color: rgb(9, 132, 214);
   cursor: pointer;
 }
 
-.selected {
-  transition-duration: 0.5s;
-  color: rgb(9, 132, 214);
-  margin: 0px;
-  padding: 0px 3px;
+.unSelected-title.selected {
+  color: #0984d6;
+  transform: scale(0.9);
 }
 
 .headtit{
@@ -118,11 +104,23 @@ li {
 }
 
 .info{
-  color:white;
+  color:rgb(214, 214, 214);
   font-size: 16px;
   margin: 0px;
 }
 
+.hidden{
+  width:0;
+  height: 0;
+  opacity: 0;
+  transition: width, opacity ease-out 1s;
+}
+
+.hidden.show{
+  width:100%;
+  height: 100%;
+  opacity: 1;
+}
 
 
 @keyframes in{
@@ -174,13 +172,35 @@ li {
 
 @media screen and (min-width: 320px) {
   .title {
-    font-size: calc(45px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(35px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .App-Header{
+    height: auto;
   }
 }
 @media screen and (min-width: 1000px) {
   .title {
     font-size: 55px;
   }
+  .App-Header{
+    min-height: 25vh;
+  }
 }
 
+@media screen and (max-width:400){
+  .title{
+    width: 100px;
+  }
+}
 
+@media screen and (min-width: 320px) {
+  .info {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .info {
+    font-size: 16px;
+  }
+}

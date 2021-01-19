@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './About.css';
-
-class About extends React.Component {
-    
-
+import header from './banner.jpg' 
+import Fade from 'react-reveal/Fade';
+class About extends React.Component {    
     render () {
         return (
+
             <div className = 'everythingelse'>
                 <div className = "home">
-                    <p className = "info"> Hey! I'm a computer engineering student at the University of Toronto looking for an internship for <span className = 'highlighted'> Summer 2021! </span> <br/> I'm interested in the fields of operating systems, machine learning and full-stack development.
+                    <p className = "info" style = {{margin: 10 + 'px' }}> Hey! I'm a computer engineering student at the University of Toronto looking for an internship for <span className = 'highlighted'> Summer 2021! </span> <br/> I'm interested in the fields of operating systems, machine learning and full-stack development.
                     <br/> </p>
                     <div className = "actions">
                    
@@ -19,7 +19,7 @@ class About extends React.Component {
                     <div className = 'column'> 
                         <div className = 'bio'>
                             <p className = 'selected1'> 
-                                who am i?
+                                Who am I?
                             </p>
                             <p className = "info">
                                 Open minded, big-picture thinker. I'm obsessed with solving problems across all fields and topics. I love looking at everyday tasks and finding out how to do them better. 
@@ -27,10 +27,10 @@ class About extends React.Component {
                             </p>
                             <div className = 'interests'> 
                             <p className = 'selected1'> 
-                                interests
+                                Interests
                             </p>
                             <p className = "info">
-                                I'm pretty interested in a wide variety of things; it depends on the day really. I'm an ex-Gamer, can't get enough music and I am committed to getting my Chess ELO over, hmm, 1800? I also love fitness/sports, especially basketball, and aspire to master the piano... eventually. 
+                                I'm pretty interested in a wide variety of things; it depends on the day really. I'm an ex-gamer, can't get enough music and I am committed to getting my chess ELO over, hmm, 1800? I also love fitness/sports (especially basketball) and aspire to master the piano... eventually. 
                                 <br/> <br/>
 
                             </p>
@@ -41,7 +41,7 @@ class About extends React.Component {
                     <div className = 'column'>
                         <div className = 'toolbox'>
                             <p className = 'selected1'> 
-                                tool box
+                                Tool Box
                             </p>
 
 
@@ -82,7 +82,7 @@ class About extends React.Component {
                     <div className = 'column'>
                         <div className = 'interests'> 
                             <p className = 'selected1'> 
-                                languages
+                                Languages
                             </p>
                             <p className = "info">
                                 <span className = 'subselected'> C </span>: Operating Systems <br/> <br/>
@@ -91,7 +91,7 @@ class About extends React.Component {
                                 <span className = 'subselected'> Javascript </span> : Freelance + Sidework <br/><br/>
                             </p>
                             <p className = 'selected1'> 
-                                resume                           
+                                Resume                          
                             </p>
 
                             <a href="https://drive.google.com/file/d/1W8kjIKZ4GcFGpfpmepcE039akZ_PWsDP/view?usp=sharing" class="button2">Open</a>
@@ -101,7 +101,7 @@ class About extends React.Component {
                 <div className = 'bottomBox'>
                     <div className = 'column'>
                         <p className = 'selected1' style = {{textAlign:'left'}}> 
-                                        get in touch
+                                        Get in Touch
                         </p>
                         <a href="mailto:wasif.zulkernine@mail.utoronto.ca"  class="button2" style = {{width: 300 + 'px'}}>Let's Chat!</a>
                     </div>
