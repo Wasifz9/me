@@ -6,13 +6,6 @@ class Contact extends React.Component {
     render () {
         return(
             <body>
-                      <div className = "home">
-                    <p className = "info"> <br/> <br/> Thanks for visiting my site! I'd love to chat more about working with you. <br/> <br/> Let's get in touch!
-                    <br/> 
-                    </p>
-                    </div>
-                    <div className = "actions">
-                    </div>
                 <div class="container">
                 <a href="https://www.linkedin.com/in/wasif-zulkernine-17a527145/">
                     <div class="card" >
@@ -54,6 +47,27 @@ class Contact extends React.Component {
                         </div>
                         </a>
                     </div>
+                    
+                    <div class="card">
+                    <a  href="https://github.com/Wasifz9" target="_blank">
+                        <div class="face face1" style = {{background: 'rgb(9, 132, 214)'}}>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a>github.com/Wasifz9</a>
+                                </h3>
+                                <p>A couple of my web development projects. Always being updated so check back soon!</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
                 </div>
             </body>
         );
