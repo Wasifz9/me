@@ -71,7 +71,9 @@ render () {
             </div>
 
           </header>
-         
+          <div className = 'footer'>
+          <p className = 'footerText'>  Please visit back soon - my personal site for the recruiting seeason of 2021/2022 is just finishing up construction.  </p>
+          </div>
       </div>
     );
   }

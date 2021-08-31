@@ -7,24 +7,47 @@ class WorkExperience extends React.Component {
     render () {
         return (
             <div className = 'everything1'>
+                    <Fade up>
+                    <div className = 'section'>
+                        <p className = 'subtitle'>
+                            RBC Analytics and Innovation
+                        </p>
+                        <p className = 'jobtitle'>
+                            full-stack engineer
+                        </p>
+                        <p className = 'subsubtitle'>
+                            summer '21
+                        </p>
+                
+                                    <p className ='info'>
+                                        <li>Owned, designed and developed a custom full-stack (Vue, Python, Sqlite) monitoring application to report, visualize and log metrics and status of all sub-components of our main product, an internal machine learning-driven financial portfolio analytics application</li>
+                                        <li>Built foundation of alert system (Slackbot) to interact with my application’s API to notify team and users of outages  </li>  
+                                        <li>Facilitated Agile meetings as temporary Scrum Master – building story points, noting updates and enabling collaboration </li> 
+                                        <li>Contributed to regular software maintenance and decisions about future direction and user retention strategies of team’s main application.</li>  
+                                    </p>
+
+
+
+                    </div>
+                </Fade>
                 <Fade up>
                     <div className = 'section'>
                         <p className = 'subtitle'>
                             RBC Analytics and Innovation
                         </p>
                         <p className = 'jobtitle'>
-                            software engineer
+                            devops engineer
                         </p>
                         <p className = 'subsubtitle'>
                             summer '20
                         </p>
                 
                                     <p className ='info'>
-                                        <li>Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.</li>
-                                        <li>Configured Master Jenkins to control Jenkins Agents on different operating systems.  </li>  
-                                        <li>Containerized Portfolio Insights application on Docker and deployed on Openshift. </li> 
-                                        <li>Trained in both AWS and Kubernetes while documenting for team use on Confluence. </li>  
-                                        <li>Presented secret management strategy to senior management and documented Vault tutorial for team use.</li>  
+                                        <li>Contributed to the migration of team’s main application from existing container orchestration platform, Docker Swarm, to Openshift</li>
+                                        <li>Reduced size of enterprise gold base containers by 50-90% with multi-stage builds and custom configurations</li>  
+                                        <li>Contributed to migration of existing pipelines from Cloudbees Jenkins to opensource Jenkins </li> 
+                                        <li>Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management </li>  
+                                        <li>Trained in AWS while documenting for new hires and preparing for full-scale migration</li>  
                                     </p>
 
 

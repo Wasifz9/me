@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;  
+  background-color:#030011;
 }
 
 .App-logo {
@@ -193,15 +194,36 @@ li {
   .title{
     width: 100px;
   }
+  .footerText{
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
 }
 
 @media screen and (min-width: 320px) {
   .info {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
+
 }
 @media screen and (min-width: 1000px) {
   .info {
     font-size: 16px;
   }
+}
+
+.footer{
+  bottom: 10; 
+  left: 0; 
+  position: fixed;
+  width: 100vw; 
+  z-index: 1;
+  background-color: #ca1515;
+  color: #BBBBBB;
+  padding: 0;
+}
+
+.footerText {
+  color:rgb(214, 214, 214);
+  font-size: 16px;
+  margin: 0px;
 }
