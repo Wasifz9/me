@@ -75,6 +75,7 @@ li {
   transition-duration: 0.3s;
   font-size:calc(10px + 2vmin);
   padding: 0px 4px;
+  
 }
 
 .unSelected-title:hover{
